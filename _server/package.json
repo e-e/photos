@@ -1,0 +1,18 @@
+{
+  "name": "photo-album",
+  "version": "0.0.1",
+  "description": "use imgur to create a photo album",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon --watch routes --watch src ./index.js",
+    "start": "node index.js"
+  },
+  "author": "Eric Ellingson <ellingsonster@gmail.com> (http://eric.wtf/)",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.4",
+    "request": "^2.81.0"
+  }
+}
