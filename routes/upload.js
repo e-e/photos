@@ -5,14 +5,13 @@ const bodyparser = require("body-parser");
 const request = require("request");
 
 const config = require("../config");
-const Result = require("../src/Result");
 
 const jsonparser = bodyparser.json();
 const router = express.Router();
 
 
 router.post("/", jsonparser, (_req, _res) => {
-	let R = new Result();
+	let rez = new rezults();
 	let data = {
 		image: _req.body.image.replace(/^data:image\/(png|gif|jpeg|jpg);base64,/, ""),
 		type: "base64",
