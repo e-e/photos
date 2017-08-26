@@ -14,7 +14,7 @@ const routes = {
 	api: require("./routes/api"),
 };
 
-app.use("/static", express.static(path.join(config.basepath, "./static")));
+// app.use("/static", express.static(path.join(config.basepath, "./static")));
 
 // routes
 app.use("/admin", routes.admin);
